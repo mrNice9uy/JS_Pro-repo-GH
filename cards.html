@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+      <button>Корзина</button>
+  </div>
+   <div class="grid">
+        <div class="product">
+            <div class="productName">Товар 1</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 2</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 3</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 4</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 5</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 6</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 7</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 8</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 9</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+            <div class="product">
+            <div class="productName">Товар 10</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 11</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+        <div class="product">
+            <div class="productName">Товар 12</div>
+            <img src="images/1.jpg" alt="">
+            <button>Добавить</button>
+        </div>
+    </div>
+    <div class="footer"> Copyright &copy; 2020. All Rights Reserved</div>
+
+    <script>
+        'use strict';
+        let item = document.querySelectorAll('.product');
+        item.forEach(function(product) {
+            product.style.background = '#73B1D6';
+        });
+        let prName = document.querySelectorAll('.productName');
+        prName.forEach(function(name) {
+            name.style.fontSize = "24px";
+        });
+    </script>
+</body>
+</html>
