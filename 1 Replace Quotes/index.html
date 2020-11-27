@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>quotes</title>
+</head>
+
+<body>
+    <p id="oldText">'Дан' большой текст, в котором для оформления прямой речи используются одинарные кавычки. 'Придумать шаблон, который заменяет' одинарные кавычки на двойные. Улучшить шаблон так, чтобы в конструкциях типа aren't одинарная 'кавычка' не заменялась 'на' двойную. Иными словами - одинарные кавычки заменить на 'двойные' кроме aren't don't isn't doesn't didn't...</p>
+    <button>Change</button>
+    
+    <p id="newText"></p>
+    <script>
+        "use strict";
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', function (event) {
+            changeQuotes(event);
+        })
+
+        function changeQuotes(event) {
+            let textOld = document.getElementById('oldText');
+            let textNew = document.getElementById('newText');
+            let str = textOld.textContent;
+            console.log(str);
+            textNew.innerText = str.replace(/(\b|\B)\'\B/gm, '"'); // на уроке подобное разобрали
+            /* еще были такие варианты:
+            textNew.innerText = str.replace(/^'|(\s)'|'(\s)|'$/g, '$1"$2');
+            textNew.innerText = str.replace(/\B'|'\B/g, '"');
+            */ 
+        };
+    </script>
+</body>
+
+</html>
