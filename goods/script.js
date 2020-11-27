@@ -53,6 +53,46 @@ class CartItem extends GoodsItem {
         super(title, price, imgUrl);
         this.quantity = quantity;
     }
+    
+    /**
+     * Метод отрисовывает добавленный товар в корзину
+     * @returns {string} html разметку страници корзины в виде строки
+    */
+    renderItem() {
+        
+    } 
+
+    /**
+     * Метод изменяет количество товаров
+     * @returns {number}
+    */
+    changeQuantity() {
+        
+    } 
+    
+    /**
+     * Метод возвращаем число всех товаров корзины
+     * @returns {number}
+    */
+    getQuantityAll() {
+        
+    }
+    
+    /**
+     * Метод возвращаем число уникальных товаров корзины
+     * @returns {number}
+    */
+    getQuantity() {
+        
+    } 
+    
+    /**
+     * Метод возвращает сумму товаров корзины
+     * @returns {number}
+    */
+    getSum() {
+        
+    }
 }
 
 class Cart {
@@ -86,24 +126,17 @@ class Cart {
     }
     
     /**
+     * Метод обновляет корзину
+     * @returns {string} html разметку страници корзины в виде строки
+    */
+    updateCart() {
+        
+    }     
+    
+    /**
      * Метод очищает корзину
     */
     clear() {
-        
-    }
-    /**
-     * Метод возвращаем число уникальных товаров корзины
-     * @returns {number}
-    */
-    getQuantity() {
-        
-    } 
-    
-    /**
-     * Метод возвращаем число всех товаров корзины
-     * @returns {number}
-    */
-    getQuantityAll() {
         
     }    
 }
