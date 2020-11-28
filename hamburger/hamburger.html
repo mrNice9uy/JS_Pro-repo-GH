@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger</title>
+</head>
+
+<body>
+    <main>
+        <form name="" action="" id="form" style="width: 200px">
+            <fieldset>
+                <legend s>Make your order</legend>
+                <div class="row" style="border-bottom: 1px solid gray;padding-bottom: 15px;margin-bottom: 15px;">
+                    <p>Choose Size</p>
+                    <div class="radio-option">
+                        <input type="radio" name="size" id="small" value="small" checked/>
+                        <label for="small">Small</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="size" id="large" value="large" />
+                        <label for="large">Large</label>
+                    </div>
+                </div>
+                <div class="row stuffing" style="border-bottom: 1px solid gray;padding-bottom: 15px;margin-bottom: 15px;">
+                    <p>Stuffing</p>
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="add" id="cheese" value="cheese" />
+                        <label for="cheese">Cheese</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="add" id="salad" value="salad" />
+                        <label for="salad">Salad</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="add" id="potato" value="potato" />
+                        <label for="potato">Potato</label>
+                    </div>
+                </div>
+                <div class="row topping" style="border-bottom: 1px solid gray;padding-bottom: 15px">
+                    <p>Topping</p>
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="add" id="spice" value="spice" />
+                        <label for="spice">Spice</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="add" id="mayo" value="mayo" />
+                        <label for="mayo">Mayo</label>
+                    </div>
+                </div>
+                <br>
+                <div class="submit">
+                    <input type="submit" value="Make Order" /> </div>
+            </fieldset>
+            <div id="result">
+                <div><b>Стоимость:</b> <span id="price">0</span> рублей</div>
+                <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+            </div>
+        </form>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
