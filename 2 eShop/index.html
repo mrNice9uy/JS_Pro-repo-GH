@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <button class="cart-button button" type="button" id="basket-btn">Корзина</button>
+    </header>
+    <main>
+        <section class="product-card-section">
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Shirt</h3> <img src="img/shirt.jpg" alt="Shirt">
+                    <p>150</p>
+                    <button class="product-card-section_btn-order" data-product-name='shirt' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Socks</h3> <img src="img/socks.jpg" alt="Socks">
+                    <p>50</p>
+                    <button class="product-card-section_btn-order" data-product-name='socks' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Jacket</h3> <img src="img/jacket.jpg" alt="Jacket">
+                    <p>350</p>
+                    <button class="product-card-section_btn-order" data-product-name='jacket' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Shoes</h3> <img src="img/shoes.jpg" alt="Shoes">
+                    <p>250</p>
+                    <button class="product-card-section_btn-order" data-product-name='shoes' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Hats</h3> <img src="img/hats.jpg" alt="Hats">
+                    <p>250</p>
+                    <button class="product-card-section_btn-order" data-product-name='hats' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Shorts</h3> <img src="img/shorts.jpg" alt="Shorts">
+                    <p>250</p>
+                    <button class="product-card-section_btn-order" data-product-name='shorts' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>            
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Gloves</h3> <img src="img/gloves.jpg" alt="Gloves">
+                    <p>250</p>
+                    <button class="product-card-section_btn-order" data-product-name='gloves' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+            <a class="product-card-section__box" href="#">
+                <div>
+                    <h3>Shorts</h3> <img src="img/jeans.jpg" alt="Jeans">
+                    <p>250</p>
+                    <button class="product-card-section_btn-order" data-product-name='jeans' onclick="addItemToCart()">В корзину</button>
+                </div>
+            </a>
+        </section>
+    </main>
+    <div id="goods-list-section" class="goods-list">
+        <div id="goods-list-section__modal">
+            <input type="submit" value="X" id="goods-list-section__delete" style="float: right">
+            <h3 id="goods-list_head-line">Корзина</h3>
+            <div id="goods-list__product-box"></div>
+            <p id="goods-list__total"></p>
+        </div>
+    </div>
+    <div class="footer"> Copyright © eShop 2020. All Rights Reserved</div>
+    <script src="script/goods_list.js" defer></script>
+</body>
+
+</html>
