@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="form-box">
+        <form name="regform" onsubmit="return formValidation(event)">
+            <h2 id="form-box__area__headline"></h2>
+            <p>Name:
+                <input type="text" size=52 name="name" class="form-box__area"> </p> <span class="error-text form-box__area"></span>
+            <p>Email:
+                <input type="text" size=52 name="email" class="form-box__area"> </p> <span class="error-text form-box__area"></span>
+            <p>Phone:
+                <input type="text" size=15 name="phone" onclick="this.value=''" value="" class="form-box__area"> </p> <span class="error-text form-box__area"></span>
+            <p> Comment:
+                <textarea cols="50" name="comment" class="form-box__area"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send" name="submitButton">
+                <button type="reset">Clear</button>
+            </p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        "use strict";
+        const forEl = document.querySelector('form');
+        forEl.addEventListener('reset', function (event) {
+            if (!confirm("Are you sure you want to clear form?")) {
+                event.preventDefault();
+            }
+        })
+    </script>
+</body>
+
+</html>
