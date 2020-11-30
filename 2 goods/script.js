@@ -1,24 +1,21 @@
 'use strict';
 const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
-
 var btnBasket = document.getElementById('basket-btn');
 var goodsListSection = document.getElementById('goods-list-section');
 var btnCloseCart = document.getElementById('goods-list-section__delete');
 var btnOrder = document.getElementsByClassName('product-card-section_btn-order');
-
 let app = new Vue({
     el: '#app',
     data: {
         catalogUrl: '/catalogData.json',
-        products: [], 
+        products: [],
         img: 'http://placehold.it/200x300', //заглушка
         searchText: '',
         filteredProducts: []
-    }, 
+    },
     methods: {
         getJson(url) {
-            return fetch(url)
-                .then(result => result.json()).catch(error => {
+            return fetch(url).then(result => result.json()).catch(error => {
                 console.log(error)
             })
         },
@@ -29,17 +26,14 @@ let app = new Vue({
             let text = this.searchText.toLowerCase().trim();
             if (text === '') {
                 this.filteredProducts = this.products;
-            }
-            else {
-                this.filteredProducts = this.products.filter((el) => {
-                    return el.product_name.toLowerCase().includes(text);
-                });
+            } else {
+                const regexp = new RegExp(text, 'i');
+                this.filteredProducts = this.products.filter(product => regexp.test(product.product_name));
             }
         }
     },
     mounted() {
-        this.getJson(`${API + this.catalogUrl}`)
-            .then(data => {
+        this.getJson(`${API + this.catalogUrl}`).then(data => {
             for (let el of data) {
                 this.products.push(el)
             }
@@ -47,13 +41,11 @@ let app = new Vue({
         this.filteredProducts = this.products;
     }
 });
-
 class Cart {
     constructor() {
         this.goods = [];
     }
 }
-
 var openBasket = () => {
     cart.render();
     goodsListSection.style.display = 'block';
