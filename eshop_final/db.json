@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "image": "product1.jpg",
+      "name": "T-shirt 1",
+      "price": 1100.234234234,
+      "article": "T1",
+      "available": true,
+      "category": "Men"
+    },
+    {
+      "image": "product2.jpg",
+      "name": "T-shirt 2",
+      "price": 2150.12312412,
+      "article": "T2",
+      "available": true,
+      "category": "Women"
+    },
+    {
+      "image": "product3.jpg",
+      "name": "T-shirt 3",
+      "price": 3200.51524,
+      "article": "T3",
+      "available": false,
+      "category": "Men"
+    },
+    {
+      "image": "product4.jpg",
+      "name": "T-shirt 4",
+      "price": 4300.1245512,
+      "article": "T4",
+      "available": true,
+      "category": "Women"
+    },
+    {
+      "image": "product5.jpg",
+      "name": "T-shirt 5",
+      "price": 5148.5686411,
+      "article": "T5",
+      "available": false,
+      "category": "Women"
+    },
+    {
+      "image": "product6.jpg",
+      "name": "T-shirt 6",
+      "price": 6050.3522314,
+      "article": "T6",
+      "available": true,
+      "category": "Men"
+    },
+    {
+      "image": "product7.jpg",
+      "name": "T-shirt 7",
+      "price": 7121.4567412,
+      "article": "T7",
+      "available": true,
+      "category": "Men"
+    },
+    {
+      "image": "product8.jpg",
+      "name": "T-shirt 8",
+      "price": 8700.4124123,
+      "article": "T8",
+      "available": true,
+      "category": "Men"
+    },
+    {
+      "image": "product9.jpg",
+      "name": "T-shirt 9",
+      "price": 9100.4656894,
+      "article": "T9",
+      "available": true,
+      "category": "Men"
+    }
+  ]
+}

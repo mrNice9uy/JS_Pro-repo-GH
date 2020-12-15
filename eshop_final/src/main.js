@@ -1,0 +1,16 @@
+import Vue from 'vue'
+import App from './App.vue'
+import store from './vuex/store'
+import router from "@/router/router";
+import 'material-design-icons-iconfont'
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
+//import './assets/styles/variables.scss'
+
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(App),
+  store,
+  router
+}).$mount('#app')
